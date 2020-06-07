@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Clouds">
+
+    <ImageView
+        android:id="@+id/imgFarmer"
+        android:tooltipText="Farmer"
+        android:src="@drawable/ic_person"
+        android:layout_margin="20dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:tooltipText="Product"
+        android:src="@drawable/ic_basket"
+        android:layout_margin="20dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtFarmerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farmer X Price: "
+        android:textSize="20sp"
+        android:layout_below="@id/imgFarmer"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtPriceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price / Weight"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtFarmerName"
+        />
+
+
+    <EditText
+        android:id="@+id/inpAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:ems="5"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/txtPriceAmount"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: "
+        android:textSize="15sp"
+        android:ems="7"
+        android:layout_below="@id/inpAmt"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:background="@drawable/ic_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/inpAmt"
+        android:layout_toRightOf="@id/inpAmt"/>
+
+    <Button
+        android:id="@+id/btnsubt"
+        android:background="@drawable/ic_subt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/inpAmt"
+        android:layout_toLeftOf="@id/inpAmt"/>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:layout_below="@id/txtTotal"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

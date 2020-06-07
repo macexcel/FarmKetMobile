@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Clouds">
+
+    <ImageView
+        android:id="@+id/imgFarmer"
+        android:src="@drawable/ic_person"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtFarmerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farmer's Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_below="@id/imgFarmer"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtfarmernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+63917513XXXX"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtFarmerName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtfarmeremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FarmerMe@XXXX.com"
+        android:textSize="20sp"
+        android:layout_below="@id/txtfarmernum"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:src="@drawable/ic_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/txtfarmernum"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/txtfarmernum"/>
+
+    <ImageView
+        android:src="@drawable/ic_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/txtfarmeremail"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/txtfarmeremail"
+         />
+
+
+
+</RelativeLayout>

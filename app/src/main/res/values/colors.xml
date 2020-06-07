@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Clouds">#ecf0f1</color>
+    <color name="LightBlue">#3c9BFA</color>
+    <color name="Teal">#67e6b2</color>
+    <color name="Gold">#e3bf10</color>
+    <color name="Flesh">#ffc18f</color>
+    <color name="FleshOpac">#99ffc18f</color>
+    <color name="BlueBG">#8AC0D4</color>
+    <color name="BlueDBG">#6D9EA3</color>
+</resources>

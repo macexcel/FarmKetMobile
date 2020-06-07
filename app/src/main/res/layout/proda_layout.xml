@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/BlueDBG">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Farmers"
+            android:textColor="@color/White"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/Clouds"
+                    >
+                    <Button
+                        android:id="@+id/btnPurchaseA"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/contactA"
+                        />
+                    <Button
+                        android:id="@+id/btnContactA"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/btnPurchaseA"/>
+
+                    <ImageView
+                        android:src="@drawable/farmera"
+                        android:id="@+id/imgFarmA"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:textSize="20dp"
+                        android:onClick="Purchase"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="10dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txtFarmerAPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Php 50 / kg"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@id/imgFarmA"/>
+                    <TextView
+                        android:id="@+id/txtFarmerAName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer A"
+                        android:textSize="10sp"
+                        android:layout_toRightOf="@id/imgFarmA"
+                        android:layout_below="@id/txtFarmerAPrice"/>
+                    <TextView
+                        android:id="@+id/txtFarmerALoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 km Away"
+                        android:textSize="10sp"
+                        android:textStyle="italic"
+                        android:layout_toRightOf="@id/imgFarmA"
+                        android:layout_below="@id/txtFarmerAName"/>
+
+                    <RatingBar
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="-100dp"
+                        android:layout_marginBottom="-20dp"
+                        android:transformPivotX="0dp"
+                        android:id="@+id/ratingA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgFarmA"
+                        android:clickable="false"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"/>
+
+                    <Button
+                        android:id="@+id/contactA"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/ic_mail"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:textSize="22sp"
+                        android:layout_toRightOf="@id/contactA"
+                        android:layout_alignBaseline="@id/contactA"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/Clouds"
+                    >
+                    <Button
+                        android:id="@+id/btnPurchaseB"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/contactB"/>
+                    <Button
+                        android:id="@+id/btnContactB"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/btnPurchaseB"/>
+
+                    <ImageView
+                        android:src="@drawable/farmerb"
+                        android:id="@+id/imgFarmB"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:textSize="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="10dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txtFarmerBPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Php 55 / kg"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@id/imgFarmB"/>
+                    <TextView
+                        android:id="@+id/txtFarmerBName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Food Hub A"
+                        android:textSize="10sp"
+                        android:layout_toRightOf="@id/imgFarmB"
+                        android:layout_below="@id/txtFarmerBPrice"/>
+                    <TextView
+                        android:id="@+id/txtFarmerBLoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="5 km Away"
+                        android:textStyle="italic"
+                        android:layout_toRightOf="@id/imgFarmB"
+                        android:layout_below="@id/txtFarmerBName"/>
+
+                    <RatingBar
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="-100dp"
+                        android:layout_marginBottom="-20dp"
+                        android:transformPivotX="0dp"
+                        android:id="@+id/ratingB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgFarmB"
+                        android:clickable="false"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"/>
+
+                    <Button
+                        android:id="@+id/contactB"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/ic_mail"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:textSize="22sp"
+                        android:layout_toRightOf="@id/contactB"
+                        android:layout_alignBaseline="@id/contactB"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/Clouds"
+                    >
+
+                    <Button
+                        android:id="@+id/btnPurchaseC"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/contactC"/>
+                    <Button
+                        android:id="@+id/btnContactC"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/btnPurchaseC"/>
+
+                    <ImageView
+                        android:src="@drawable/farmerc"
+                        android:id="@+id/imgFarmC"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:textSize="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="10dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txtFarmerCPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Php 43 / kg"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@id/imgFarmC"/>
+                    <TextView
+                        android:id="@+id/txtFarmerCName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer C"
+                        android:textSize="10sp"
+                        android:layout_toRightOf="@id/imgFarmC"
+                        android:layout_below="@id/txtFarmerCPrice"/>
+                    <TextView
+                        android:id="@+id/txtFarmerCLoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.2 km away"
+                        android:textSize="10sp"
+                        android:textStyle="italic"
+                        android:layout_toRightOf="@id/imgFarmC"
+                        android:layout_below="@id/txtFarmerCName"/>
+
+                    <RatingBar
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="-100dp"
+                        android:layout_marginBottom="-30dp"
+                        android:transformPivotX="0dp"
+                        android:id="@+id/ratingC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgFarmC"
+                        android:clickable="false"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"/>
+
+                    <Button
+                        android:id="@+id/contactC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/ic_mail"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:textSize="22sp"
+                        android:layout_toRightOf="@id/contactC"
+                        android:layout_alignBaseline="@id/contactC"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
